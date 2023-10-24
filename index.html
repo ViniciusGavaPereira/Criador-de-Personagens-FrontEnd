@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criado de personagens</title>
+    <script type="text/javascript" src="./scripts.js"></script>
+</head>
+<body>
+    <form>
+        <fieldset>
+           <legend><h1>Criação de conta</h1></legend>
+           <label for="fName">Nome</label><br>
+           <input type="text" name="fName"><br>
+           <label for="fIdade">CPF</label><br>
+           <input type="text" name="fCPF"><br>
+           <label for="fEmail">E-mail</label><br>
+           <input type="text" name="fEmail"><br>
+           <label for="fSenha">Senha</label><br>
+           <input type="password" name="fSenha"><br>
+           <label for="fSenha2">Confirmar a senha</label><br>
+           <input type="password" name="fSenha2"><br>
+           <button type="submit">Criar conta</button>
+
+ 
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><h1>Criação de personagens</h1></legend>
+            
+            <label for="fNameCharacter">Nome do personagem</label><br>
+            <input type="text" name="fNameCharacter"><br>
+            <br>
+
+            <fieldset>
+                <legend for="time">Defina seu sexo</legend>
+                <input type="radio" id="idHomem" name="sex" value="Homem">Homem
+                <input type="radio" id="idMulhero" name="sex" value="Mulher">Mulher
+            </fieldset>
+    
+            <br>
+
+            <label for="fNumber" >Level</label><br>
+            <input type="number" name="fNumer" disabled><br>
+            <label for="fRace">Raça</label><br>
+            <input type="text" name="fName" disabled><br>
+            <label for="fClass">Classe</label><br>
+            <input type="text" name="fClass" disabled><br>
+            <label for="fAligment">Alinhamento</label><br>
+            <input type="text" name="fAligment" disabled><br>
+
+            <button type="submit" disabled>Criar personagem</button>
+        </fieldset>
+
+
+    </form>
+</body>
+</html>
