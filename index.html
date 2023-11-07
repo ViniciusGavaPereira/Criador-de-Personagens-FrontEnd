@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Criador de personagens</title>
     <script type="text/javascript" src="./scripts.js" defer></script>
 </head>
@@ -20,7 +21,7 @@
            <input type="password" name="fSenha" class="senha"><br>
            <label for="fSenha2">Confirmar a senha</label><br>
            <input type="password" name="fSenha2" class="senha2"><br>
-           <button type="submit">Criar conta</button>
+           <button type="submit" disabled>Criar conta</button>
 
  
         </fieldset>
@@ -31,11 +32,11 @@
             <legend><h1>Criação de personagens</h1></legend>
             
             <label for="fNameCharacter">Nome do personagem</label><br>
-            <input type="text" name="fNameCharacter"><br>
+            <input type="text" name="fNameCharacter"  class="CharacterName"><br>
             <br>
 
-            <fieldset>
-                <legend for="time">Defina seu sexo</legend>
+            <fieldset id="CharacterSex">
+                <legend for="time" name="sex" >Defina seu sexo</legend>
                 <input type="radio" id="idHomem" name="sex" value="Homem">Homem
                 <input type="radio" id="idMulhero" name="sex" value="Mulher">Mulher
             </fieldset>
@@ -51,8 +52,9 @@
             <label for="fAligment">Alinhamento</label><br>
             <input type="text" name="fAligment" disabled><br>
 
-            <button type="submit" disabled>Criar personagem</button>
+            <button type="submit" >Criar personagem</button>
         </fieldset>
+
 
 
     </form>
